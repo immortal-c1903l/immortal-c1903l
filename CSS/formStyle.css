@@ -9,7 +9,13 @@
 }
 
 .makeForm {
-    position: relative;
-    min-height: 100vh;
+    min-height: 10vh;
     background-image: linear-gradient(120deg, #74ebd5 0%, #9face6 100%);
+    width: 360px;
+    background-color: white;
+    height: 300px;
+    padding: 80px 40px;
+    left: 50%;
+    top: 50%;
+    position: relative;
 }
