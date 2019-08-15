@@ -1,0 +1,15 @@
+/*------Page Setup---------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: "Source San Pro",sans-serif;
+    box-sizing: border-box;
+}
+
+.makeForm {
+    position: relative;
+    min-height: 100vh;
+    background-image: linear-gradient(120deg, #74ebd5 0%, #9face6 100%);
+}
