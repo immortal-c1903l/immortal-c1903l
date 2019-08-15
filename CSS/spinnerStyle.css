@@ -1,0 +1,19 @@
+body {
+    background-color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+.main {
+    border: 2px solid red;
+    border-radius: 50%;
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    top: 40%;
+    left: 44%;
+}
+
+p {
+    text-align: center;
+    margin-top: 50%;
+}
