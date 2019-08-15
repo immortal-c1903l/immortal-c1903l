@@ -19,3 +19,15 @@
     top: 50%;
     position: relative;
 }
+
+.formHeading .mainHeading {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    color: #8ea8ad;
+}
+.formHeading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
