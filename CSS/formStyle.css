@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 /*------Page Setup---------*/
 
 * {
@@ -13,7 +12,6 @@
     position: relative;
     min-height: 100vh;
     background-image: linear-gradient(120deg, #74ebd5 0%, #9face6 100%);
-    /*    overflow: hidden; !*ẩn scroll bar khi thực hiện các hiệu ứng tràn khung*!*/
 }
 
 
@@ -59,6 +57,7 @@
     border-bottom: 2px solid #adadad;
     position: relative;
     margin: 40px 0;
+/*    border: 1px solid red;*/
 }
 
 .txtb input {
@@ -71,5 +70,25 @@
     padding: 0 10px;
     height: 30px;
 }
-=======
->>>>>>> parent of 21aa08a... Page Setup - CSS
+
+/*------Text Box animation---------*/
+
+.txtb span::before {
+    content: attr(data-placeholder);
+    position: absolute; /*Lấy góc trái trên nội dung của thẻ span làm mốc*/
+    top: 50%;
+    left: 10px;
+    color: #adadad;
+    transform: translateY(-50%);
+    z-index: -1; /*đưa xuống lớp nền bên dưới*/
+    transition: .5s;
+}
+
+.txtb span::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(120deg, #3498db, #006266);
+    transition: .5s;
+}
