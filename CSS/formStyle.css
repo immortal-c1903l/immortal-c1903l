@@ -92,3 +92,27 @@
     background: linear-gradient(120deg, #3498db, #006266);
     transition: .5s;
 }
+
+/*------Login button---------*/
+
+.mainbtn {
+    display: block;
+    width: 50%;
+    height: 30px;
+    margin: 30px auto;
+    background-image: linear-gradient(to right, #92fe9d 0%, #00c9ff, #92fe9d);
+    background-size: 200%;
+    color: #fff;
+    cursor: pointer;
+    transition: .5s;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 20px;
+}
+
+.mainbtn:hover,
+.mainbtn:active {
+    background-position: right;
+    transform: scale(1.2);
+}
