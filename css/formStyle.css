@@ -86,10 +86,18 @@
 .txtb span::after {
     content: "";
     position: absolute;
-    width: 100%;
+    width: 0%;
     height: 2px;
     background: linear-gradient(120deg, #3498db, #006266);
     transition: .5s;
+}
+
+.rise + span::before {
+    top: -5px;
+}
+
+.rise + span::after {
+    width: 100%;
 }
 
 /*------Login button---------*/
