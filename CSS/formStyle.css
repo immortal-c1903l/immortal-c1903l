@@ -61,6 +61,13 @@
     background: none;
     border: none;
 }
+.input-style:focus {  /*code làm mất border input*/
+    outline-width: 0;
+}
+.select-style:focus{
+    outline-width: 0;
+    color: black;
+}
 .input-style::-webkit-input-placeholder { /* Edge */
     color: White;
 }
@@ -86,7 +93,13 @@
     font-size: 30px;
 }
 
-
+.select-style{
+    width: 100%;
+    padding: 9px 0;
+    color: white;
+    background: none;
+    border: none;
+}
 
 /*------Heading---------*/
 
