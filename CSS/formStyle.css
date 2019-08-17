@@ -1,19 +1,86 @@
 /*------Page Setup---------*/
 
-* {
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-    font-family: "Source San Pro",sans-serif;
-    box-sizing: border-box;
-}
-
-.makeForm {
-    position: relative;
-    min-height: 100vh;
-    background-image: linear-gradient(120deg, #74ebd5 0%, #9face6 100%);
-}
-
-.formHeading {
+.bottom-text {
     border: 1px solid red;
+
+}
+
+.
+}
+
+/*------Login form---------*/
+
+/*------Bottom Text for SignUP---------*/
+.bottom-textSignUp {
+
+    border: none;
+}
+
+.bottom-textSignUp a{
+
+    border: none;
+}
+
+/*------Signup form---------*/
+.Signup-form{
+
+    border: 2px solid red;
+    /*    visibility: hidden;*/
+
+}
+
+.Signup-form .txtb {
+    margin: 5px 0;
+}
+.Signup-form .input{
+
+    border: none;
+
+
+
+}
+.inputtext{
+    border: 1px solid red;
+}
+.input-style{
+    color: Black;
+
+}
+
+.select-style:focus{
+    color: black;
+}
+.input-style::-webkit-input-placeholder { /* Edge */
+    color: black;
+}
+
+.input-style:-ms-input-placeholder { /* Internet Explorer */
+    color: black;
+}
+
+.input-style::placeholder {
+    color: black;
+}
+
+.select-style{
+
+    color: black;
+
+}
+
+/*------Heading---------*/
+
+
+/*------Login button---------*/
+
+.mainbtn {
+
+    border: none;
+
+}
+
+.mainbtn:hover,
+.mainbtn:active {
+    background-position: right;
+    transform: scale(1.2);
 }
