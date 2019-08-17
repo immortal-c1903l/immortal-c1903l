@@ -57,7 +57,6 @@
     border-bottom: 2px solid #adadad;
     position: relative;
     margin: 40px 0;
-/*    border: 1px solid red;*/
 }
 
 .txtb input {
@@ -115,4 +114,15 @@
 .mainbtn:active {
     background-position: right;
     transform: scale(1.2);
+}
+
+/*------Bottom Text---------*/
+.bottom-text {
+    margin-top: 60px;
+    text-align: center;
+    font-size: 15px;
+}
+
+.bottom-text a{
+    color:#95afc0;
 }
