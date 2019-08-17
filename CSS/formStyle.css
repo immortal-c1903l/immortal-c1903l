@@ -1,86 +1,25 @@
 /*------Page Setup---------*/
 
-.bottom-text {
-    border: 1px solid red;
-
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: "Source San Pro",sans-serif;
+    box-sizing: border-box;
 }
 
-.
-}
 
-/*------Login form---------*/
-
-/*------Bottom Text for SignUP---------*/
-.bottom-textSignUp {
-
+.formHeading {
     border: none;
 }
-
-.bottom-textSignUp a{
-
-    border: none;
-}
-
-/*------Signup form---------*/
-.Signup-form{
-
-    border: 2px solid red;
-    /*    visibility: hidden;*/
-
-}
-
-.Signup-form .txtb {
-    margin: 5px 0;
-}
-.Signup-form .input{
-
-    border: none;
-
-
-
-}
-.inputtext{
+.Skeleton{
     border: 1px solid red;
 }
-.input-style{
-    color: Black;
-
+.SkeletonHeading
+{
+    border: 1px solid red;
 }
-
-.select-style:focus{
-    color: black;
-}
-.input-style::-webkit-input-placeholder { /* Edge */
-    color: black;
-}
-
-.input-style:-ms-input-placeholder { /* Internet Explorer */
-    color: black;
-}
-
-.input-style::placeholder {
-    color: black;
-}
-
-.select-style{
-
-    color: black;
-
-}
-
-/*------Heading---------*/
-
-
-/*------Login button---------*/
-
-.mainbtn {
-
-    border: none;
-
-}
-
-.mainbtn:hover,
-.mainbtn:active {
-    background-position: right;
-    transform: scale(1.2);
+.SkeletonInput
+{
+    border: 1px solid red;
 }

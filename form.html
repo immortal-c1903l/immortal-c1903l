@@ -1,67 +1,43 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Login Page</title>
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600" rel="stylesheet">
-    <link rel="stylesheet" href="CSS/formStyle.css">
+    <link rel="stylesheet" href="css/formStyle.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" charset="UTF-8"></script>
     <script src="https://kit.fontawesome.com/5a317a0200.js"></script>
 </head>
 <body>
 <div class="makeForm">
 
-    <!--------Sign up form----------->
-
-    <div class="Signup-form">
-
-        <div class="formHeading">
-            <span class="mainHeading">Sign Up</span>
-        </div>
-
-        <form action="index.html">
-            <div class = "inputtext">
-
-                <div class="input">
-                    <input class="input-style" type="text" placeholder="NAME" name="name">
+    <form action="index.html" class="login-form">
+        <div class="Skeleton">
+            <div class="SkeletonHeading">
+                <div class="form-icon">
+                    <i class="fa fa-user"></i>
                 </div>
 
-                <div class="input">
-                    <input class="input-style" type="text" placeholder="Email" name="Email">
+                <div class="formHeading">
+                    <span class="mainHeading">WELCOME</span>
+                    <span class="subHeading">Sign in to your account</span>
                 </div>
+                <div class="SkeletonInput">
 
-                <div class="input">
-                    <input class="input-style" type="date" placeholder="Birthday" name="Birthday">
-                </div>
+                    <div class="txtb">
+                        <input type="text">
+                        <span data-placeholder="Username"></span>
+                    </div>
 
-                <div class="input">
-                    <select class="select-style" name="Gender">
-                        <option disabled="disabled" selected="selected">Gender</option>
-                        <option>Male</option>
-                        <option>Female</option>
-                        <option>Other</option>
-                    </select>
-                </div>
-
-                <div class="input">
-                    <input class="input-style" type="text" placeholder="User" name="User">
-                </div>
-
-                <div class="input">
-                    <input class="input-style" type="password" placeholder="Password" name="Password">
-                </div>
-
-                <div class="input">
-                    <input class="input-style" type="password" placeholder="Confirm Password" name="Password">
-                </div>
-                <div class="bottom-text">
-                    <input type="submit" class="mainbtn" value="Sign up">
-                    <div class="bottom-textSignUp">Have an account? <a href="#" id="flipToSignIn">Sign in</a>
+                    <div class="txtb">
+                        <input type="password">
+                        <span data-placeholder="Password"></span>
                     </div>
                 </div>
+                <input type="submit" class="mainbtn" value="Sign in">
+                <div class="bottom-text">
+                    Don't have an account? <a href="#" id="flipToSignUp">Sign up</a>
+                </div>
             </div>
-        </form>
-    </div>
+    </form>
 
 </div>
 </body>
