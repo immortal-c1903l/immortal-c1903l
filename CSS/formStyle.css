@@ -42,32 +42,35 @@
     /*    visibility: hidden;*/
 
 }
+
 .Signup-form .txtb {
     margin: 5px 0;
-
 }
-.Signup-form input{
-    outline: none;
-    margin: 0;
+.Signup-form .input{
+    position: relative;
+    margin-bottom: 15px;
+    margin-top: 15px;
     border: none;
-    -webkit-box-shadow: none;
-    -moz-box-shadow: none;
-    box-shadow: none;
+    border-bottom: 2px solid #ccc;
+
+}
+.input-style{
     width: 100%;
-    font-size: 14px;
-    font-family: inherit;
+    padding: 9px 0;
+    color: White;
+    background: none;
+    border: none;
+}
+.input-style::-webkit-input-placeholder { /* Edge */
+    color: White;
 }
 
-.input::-webkit-input-placeholder { /* Edge */
-    color: red;
+.input-style:-ms-input-placeholder { /* Internet Explorer */
+    color: White;
 }
 
-input:-ms-input-placeholder { /* Internet Explorer */
-    color: red;
-}
-
-input::placeholder {
-    color: red;
+.input-style::placeholder {
+    color: White;
 }
 .Signup-form .col2
 {
@@ -82,6 +85,8 @@ input::placeholder {
     line-height: 10px;
     font-size: 30px;
 }
+
+
 
 /*------Heading---------*/
 
