@@ -70,6 +70,11 @@ span {
     to {opacity: 0;}
 }
 
+
+/***********************************
+* Responsile
+***********************************/
+
 @media only screen and (max-width: 768px) {
     .load {
         width: 150px;
