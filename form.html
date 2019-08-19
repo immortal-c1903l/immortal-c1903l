@@ -5,6 +5,7 @@
     <title>Login Page</title>
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600" rel="stylesheet">
     <link rel="stylesheet" href="css/formStyle.css">
+    <link rel="stylesheet" href="css/jqueryui.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" charset="UTF-8"></script>
     <script src="https://kit.fontawesome.com/5a317a0200.js"></script>
 </head>
@@ -54,7 +55,7 @@
             </div>
             <div class="info">
                 <div class="input">
-                    <input class="input-style" type="date" placeholder="Birthday" name="Birthday">
+                    <input class="input-style" id="datepicker" type="type" placeholder="Birthday" name="Birthday">
                 </div>
 
                 <div class="input">
@@ -85,6 +86,14 @@
     </div>
 
     <script type="text/javascript" src="./js/form.js"></script>
+    <!----Birthday JS----->
+    <script type="text/javascript" src="./js/jquery-ui.js"> </script>
+    <script>
+        $( function() {
+            $( "#datepicker" ).datepicker();
+        } );
+    </script>
+
 </div>
 </body>
 </html>
