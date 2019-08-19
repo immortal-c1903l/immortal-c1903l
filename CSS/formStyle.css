@@ -1,3 +1,6 @@
+/****************************/
+/*------Page Setup---------*/
+/****************************/
 
 * {
     margin: 0;
@@ -13,8 +16,10 @@
     background-image: linear-gradient(120deg, #74ebd5 0%, #9face6 100%);
 }
 
-
+/****************************/
 /*------Login form---------*/
+/****************************/
+
 .login-form {
     width: 360px;
     background-color: rgba(0, 0, 0, 0.6);
@@ -85,10 +90,18 @@
 .txtb span::after {
     content: "";
     position: absolute;
-    width: 100%;
+    width: 0%;
     height: 2px;
     background: linear-gradient(120deg, #3498db, #006266);
     transition: .5s;
+}
+
+.rise + span::before {
+    top: -5px;
+}
+
+.rise + span::after {
+    width: 100%;
 }
 
 /*------Login button---------*/
@@ -115,7 +128,6 @@
     transform: scale(1.2);
 }
 
-/*------Bottom Text---------*/
 .bottom-text {
     margin-top: 60px;
     text-align: center;
@@ -123,5 +135,163 @@
 }
 
 .bottom-text a{
-    color:#95afc0;
+    color: #95afc0;
+}
+
+
+/****************************/
+/*------Sign Up form---------*/
+/****************************/
+
+.Signup-form{
+    width: 360px;
+    background-color: rgba(0, 0, 0, 0.6);
+    height: 580px;
+    padding: 5px 40px;
+    border-radius: 10px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    /*    visibility: hidden;*/
+}
+
+.Signup-form .input{
+    position: relative;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    border: none;
+    border-bottom: 2px solid #ccc;
+}
+
+.input-style{
+    width: 100%;
+    padding: 9px 0;
+    color: White;
+    background: none;
+    border: none;
+}
+.input-style:focus {  /*code làm mất border input*/
+    outline-width: 0;
+}
+.select-style:focus{
+    outline-width: 0;
+    color: black;
+}
+.input-style::-webkit-input-placeholder { /* Edge */
+    color: White;
+}
+
+.input-style:-ms-input-placeholder { /* Internet Explorer */
+    color: White;
+}
+
+.input-style::placeholder {
+    color: White;
+}
+.Signup-form .col2
+{
+    width: 100%;
+    margin: 5%;
+    display: flex;
+}
+.Signup-form .col2 > div {
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 10px;
+    font-size: 30px;
+}
+
+.select-style{
+    width: 100%;
+    padding: 9px 0;
+    color: white;
+    background: none;
+    border: none;
+}
+
+/****************************/
+/*------Animation Rotate-----*/
+/****************************/
+
+.login-form{
+    backface-visibility: hidden;
+    animation-duration: 2s;
+}
+
+.Signup-form{
+    backface-visibility: hidden;
+    transform: translate(-50%,-50%) rotateY(180deg);
+    animation-duration: 2s;
+}
+
+@keyframes showSignUp {
+    0%{transform: translate(-50%,-50%) rotateY(0deg);/*điểm bắt đầu (có thể thay bằng from)*/}
+    100%{transform: translate(-50%,-50%) rotateY(180deg);/*điểm kết thúc (có thể thay bằng to)*/}
+}
+
+/*Horizontal rotation from front to back*/
+@keyframes hideSignIn {
+    0%{transform: translate(-50%,-50%) rotateY(180deg);}
+    100%{transform: translate(-50%,-50%) rotateY(0deg);}
+}
+
+/*Vertical rotation from front to back*/
+@keyframes showSignIn {
+    0%{transform: translate(-50%,-50%) rotateX(0deg);}
+    100%{transform: translate(-50%,-50%) rotateX(180deg);}
+}
+
+@keyframes hideSignUp {
+    0%{transform: translate(-50%,-50%) rotateX(180deg);}
+    100%{transform: translate(-50%,-50%) rotateX(0deg);}
+}
+
+/***********************************
+* Responsile
+***********************************/
+
+@media only screen and (max-width : 768px) {
+    .login-form {
+        width: 300px;
+        height: 500px;
+        padding: 50px 40px;
+    }
+
+    .Signup-form {
+        width: 400px;
+        height: 500px;
+        padding: 50px 40px;
+    }
+
+    .Signup-form .input{
+        position: relative;
+        margin-bottom: 10px;
+        margin-top: 15px;
+        border-bottom: 2px solid #ccc;
+    }
+
+    .Signup-form .formHeading{
+        transform: translateY(-30px);
+    }
+
+    #form-container{
+        padding: 5px;
+        transform: translateY(-30px);
+    }
+
+    .info{
+        display: flex;
+        justify-content: space-between;
+        padding: 0;
+    }
+
+    .Signup-form .mainbtn {
+        margin: 20px auto;
+    }
+
+    .Signup-form .bottom-text {
+        margin-top: 20px;
+    }
+
 }

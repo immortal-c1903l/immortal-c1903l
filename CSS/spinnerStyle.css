@@ -1,11 +1,10 @@
 body {
-    background-color: #f1c40f;
+    background-image: linear-gradient(120deg, #74ebd5 0%, #9face6 100%);
     font-family: 'Roboto', sans-serif;
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-
 }
 
 .load {
