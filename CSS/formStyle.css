@@ -153,21 +153,16 @@
     left: 50%;
     top: 50%;
     /*    visibility: hidden;*/
-
 }
 
-
-.Signup-form .txtb {
-    margin: 5px 0;
-}
 .Signup-form .input{
     position: relative;
     margin-bottom: 15px;
     margin-top: 15px;
     border: none;
     border-bottom: 2px solid #ccc;
-
 }
+
 .input-style{
     width: 100%;
     padding: 9px 0;
@@ -250,4 +245,53 @@
 @keyframes hideSignUp {
     0%{transform: translate(-50%,-50%) rotateX(180deg);}
     100%{transform: translate(-50%,-50%) rotateX(0deg);}
+}
+
+/***********************************
+* Responsile
+***********************************/
+
+@media only screen and (max-width : 768px) {
+    .login-form {
+        width: 300px;
+        height: 500px;
+        padding: 50px 40px;
+    }
+
+    .Signup-form {
+        width: 400px;
+        height: 500px;
+        padding: 50px 40px;
+    }
+
+    .Signup-form .input{
+        position: relative;
+        margin-bottom: 10px;
+        margin-top: 15px;
+        border-bottom: 2px solid #ccc;
+    }
+
+    .Signup-form .formHeading{
+        transform: translateY(-30px);
+    }
+
+    #form-container{
+        padding: 5px;
+        transform: translateY(-30px);
+    }
+
+    .info{
+        display: flex;
+        justify-content: space-between;
+        padding: 0;
+    }
+
+    .Signup-form .mainbtn {
+        margin: 20px auto;
+    }
+
+    .Signup-form .bottom-text {
+        margin-top: 20px;
+    }
+
 }
