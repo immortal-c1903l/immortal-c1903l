@@ -1,0 +1,215 @@
+/***********************************
+* Overall
+***********************************/
+
+html{
+    box-sizing: border-box;
+    -moz-box-sizing: border-box; /*Cho trình duyệt firefox*/
+    -webkit-box-sizing: border-box; /*Cho trình duyệt Chrome bản cũ*/
+}/*cố định các phần tử bên trong khung html, khi sử dụng các thuộc tính height, width vùng biên không bị giãn nở
+thêm*/
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}/*phần tử trong, trước và sau khung html đều được kế thừa thuộc tính box-sizing đã khai báo ở trên*/
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    line-height: 1.5;
+    background: #F2F2F2;
+    color: #323232;
+}
+
+#container {
+    max-width: 960px;
+    margin: 40px auto;
+    padding: 32px;
+    background: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+section {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-gap: 20px;
+    padding: 24px 0;
+    border-bottom: 1px solid lightgrey;
+}
+
+section:last-child {
+    border-bottom: none;
+    grid-template-columns: 1fr 1.5fr 1fr 1.5fr;
+}
+
+.section-title{
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/*.detail{
+    border: #ff0000 solid 2px;
+}*/
+
+img {
+    max-width: 100%; /*Set default để ảnh chiếm trọn 100% block*/
+}
+
+.icon {
+    fill: currentColor;
+    display: inline-block;
+    font-size: inherit;
+    height: 1em;
+}
+
+.links .link-item:nth-child(3){
+    margin-left: 15px;
+/*    border: #ff0000 solid 2px;*/
+}
+
+a {
+    color: currentColor;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+p{
+    font-size: inherit;
+    text-align: justify;
+    padding-right: 20px;
+}
+
+/***********************************
+* Main Info
+***********************************/
+
+img.avatar {
+    width: 150px;
+    /*Bo ảnh*/
+    border-radius:50%;
+    -moz-border-radius:50%;
+    -webkit-border-radius:50%;
+}
+
+.my-name {
+    font-size: 48px;
+    /*Tăng khoảng cách so với dòng liền kề*/
+    line-height: 1;
+}
+
+.my-title {
+    font-size: 24px;
+    /*Độ đậm nhạt của chữ*/
+    font-weight: 300;
+    color: #236FB2;
+}
+
+.links {
+    /*Dàn trang theo mặc đinh là hàng ngang*/
+    display: flex;
+    justify-content: flex-start;
+    margin: 10px 0 20px 0;
+/*    border: #ff0000 solid 2px;*/
+}
+
+.link-item {
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-start;
+    /*Phân bổ đều bố cục các thành phần có cùng class name*/
+}
+
+.link-item svg,i {
+    margin-right: 6px;
+}
+
+/***********************************
+* Experience
+***********************************/
+
+.job {
+    padding-bottom: 24px;
+    margin-bottom: 24px;
+    border-bottom: 1px solid lightgrey;
+
+}
+
+.job:last-child {
+    border-bottom: none;
+}
+
+.job-title-container {
+    display: flex;/*Trong bố cục nhỏ dùng flex để dàn trang thay vì dùng grid*/
+    justify-content: space-between;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.job-company {
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.skills-container ul{
+    margin-left: 20px;
+    list-style-type: disc;
+}
+
+/***********************************
+* Interests
+***********************************/
+
+.interests-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.interests-container img {
+    height: 35px;
+    opacity: 0.75;
+    padding-right: 100px;
+}
+
+/***********************************
+* Responsile
+***********************************/
+
+/*Thu nhỏ màn hình xuống dưới mức 768px thì đoạn code bên trong sẽ được thực thi*/
+@media only screen and (max-width : 768px) {
+
+    section {
+        grid-template-columns: 1fr;
+    }
+
+    .links, .job-title-container {
+        flex-direction: column;
+    }
+
+    .information .links .link-item:last-child{
+        margin-left: 0;
+    }
+
+    .interests-container {
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+    }
+
+    section:last-child {
+        display: flex;
+        flex-direction: column;
+        line-height: 30px;
+    }
+
+}
+
+/*Thu nhỏ màn hình xuống dưới mức 768px thì đoạn code bên trong sẽ được thực thi*/
+@media only screen and (max-width : 360px) {
+
+    .interests-container {
+        display:grid;
+        grid-template-columns: auto auto;
+    }
+
+}
