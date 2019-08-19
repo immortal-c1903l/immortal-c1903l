@@ -1,0 +1,127 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: "Source San Pro",sans-serif;
+    box-sizing: border-box;
+}
+
+.makeForm {
+    position: relative;
+    min-height: 100vh;
+    background-image: linear-gradient(120deg, #74ebd5 0%, #9face6 100%);
+}
+
+
+/*------Login form---------*/
+.login-form {
+    width: 360px;
+    background-color: rgba(0, 0, 0, 0.6);
+    height: 580px;
+    padding: 80px 40px;
+    border-radius: 10px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    /*    visibility: hidden;*/
+}
+
+/*------Heading---------*/
+
+.formHeading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #8ea8ad;
+}
+
+.form-icon {
+    height: 40px;
+    width: 20%;
+    font-size: 30px;
+    transform: translateX(20%);
+    color: #1289A7;
+}
+
+.formHeading .mainHeading {
+    font-size: 30px;
+    font-weight: 700;
+    color: #8ea8ad;
+}
+
+/*------Text Box---------*/
+.txtb {
+    border-bottom: 2px solid #adadad;
+    position: relative;
+    margin: 40px 0;
+}
+
+.txtb input {
+    border: none;
+    font-size: 15px;
+    color: #8ea8ad;
+    width: 100%;
+    outline: none;
+    background: none;
+    padding: 0 10px;
+    height: 30px;
+}
+
+/*------Text Box animation---------*/
+
+.txtb span::before {
+    content: attr(data-placeholder);
+    position: absolute; /*Lấy góc trái trên nội dung của thẻ span làm mốc*/
+    top: 50%;
+    left: 10px;
+    color: #adadad;
+    transform: translateY(-50%);
+    z-index: -1; /*đưa xuống lớp nền bên dưới*/
+    transition: .5s;
+}
+
+.txtb span::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(120deg, #3498db, #006266);
+    transition: .5s;
+}
+
+/*------Login button---------*/
+
+.mainbtn {
+    display: block;
+    width: 50%;
+    height: 30px;
+    margin: 30px auto;
+    background-image: linear-gradient(to right, #92fe9d 0%, #00c9ff, #92fe9d);
+    background-size: 200%;
+    color: #fff;
+    cursor: pointer;
+    transition: .5s;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 20px;
+}
+
+.mainbtn:hover,
+.mainbtn:active {
+    background-position: right;
+    transform: scale(1.2);
+}
+
+/*------Bottom Text---------*/
+.bottom-text {
+    margin-top: 60px;
+    text-align: center;
+    font-size: 15px;
+}
+
+.bottom-text a{
+    color:#95afc0;
+}
