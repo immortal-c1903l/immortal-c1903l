@@ -7,6 +7,10 @@ body {
     justify-content: center;
 }
 
+.load_main {
+    position: relative;
+}
+
 .load {
     box-sizing: border-box;
     border-radius: 50%;
@@ -14,8 +18,9 @@ body {
     height: 200px;
     border-top: 10px solid #1abc9c;
     position: relative;
-    animation: spinner 3s infinite;
-    animation-delay: 1s;
+
+    animation: spinner 2s linear 3;
+
 }
 
 .load::before, .load::after {
@@ -49,7 +54,7 @@ span {
     height: 200px;
     font-size: 150%;
     position: absolute;
-    margin-top: -9%;
+    margin-top: -113px;
 }
 
 
@@ -58,3 +63,31 @@ span {
         transform: rotate(360deg);
     }
 }
+
+
+@keyframes fadeout {
+    from {opacity: 1;}
+    to {opacity: 0;}
+}
+
+@media only screen and (max-width: 768px) {
+    .load {
+        width: 150px;
+        height: 150px;
+        border-top: 7px solid #1abc9c;
+    }
+
+    .load::before, .load::after {
+        width: 150px;
+        height: 150px;
+
+    }
+
+    span {
+        font-size: 120%;
+        transform: translate(-10%, 12%);
+
+    }
+}
+
+
