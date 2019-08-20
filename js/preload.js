@@ -2,7 +2,7 @@
 
     var preload = document.getElementById("load_main");
     var loading = 0;
-    var id = setInterval(frame, 50);
+    var id      = setInterval(frame, 50);
 
     function frame() {
         if (loading === 60) {
