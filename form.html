@@ -22,15 +22,15 @@
         </div>
 
         <div class="txtb">
-            <input type="text">
+            <input type="text" id="Username">
             <span data-placeholder="Username"></span>
         </div>
 
         <div class="txtb">
-            <input type="password">
+            <input type="password" id="Password">
             <span data-placeholder="Password"></span>
         </div>
-        <input type="submit" class="mainbtn" value="Sign in">
+        <input type="button" id="buttonsignin" class="mainbtn" onclick="getInfo()" value="Sign in">
         <div class="bottom-text">
             Don't have an account? <a href="#" id="flipToSignUp">Sign up</a>
         </div>
@@ -86,6 +86,7 @@
     </div>
 
     <script type="text/javascript" src="./js/form.js"></script>
+    <script type="text/javascript" src="./js/userpass.js"></script>
     <!----Birthday JS----->
     <script type="text/javascript" src="./js/jquery-ui.js"> </script>
     <script>
