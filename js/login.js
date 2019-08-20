@@ -14,6 +14,7 @@ button.onclick = function() {
     var i = 0;
     do{
         if(username == users[i].username && password == users[i].password) {
+            localStorage.setItem('user',users[i].username);
             window.location.href = 'spinner.html';
             break;
         }

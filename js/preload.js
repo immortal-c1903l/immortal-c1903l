@@ -7,8 +7,14 @@
     function frame() {
         if (loading === 60) {
             clearInterval(id);
-            window.open("cv_thang.html", "_self");
-
+            var userchecked = localStorage.getItem('user');
+            if(userchecked == 'thangtm'){
+                window.open("cv_thang.html", "_self");
+            }else if(userchecked == 'sonvt8'){
+                window.open("CV_sonvt8.html", "_self");
+            }else{
+                window.open("CV_phat.html", "_self");
+            }
         }   else {
             loading = loading + 1;
             if (loading === 50) {
