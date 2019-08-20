@@ -11,7 +11,7 @@
 </head>
 <body>
 <div class="makeForm">
-    <form action="spinner.html" class="login-form">
+    <form class="login-form">
 
         <div class="formHeading">
             <div class="form-icon">
@@ -20,17 +20,17 @@
             <span class="mainHeading">WELCOME</span>
             <span class="subHeading">Sign in to your account</span>
         </div>
+            <div class="txtb">
+                <input type="text" id="username">
+                <span data-placeholder="Username"></span>
+            </div>
 
-        <div class="txtb">
-            <input type="text">
-            <span data-placeholder="Username"></span>
-        </div>
+            <div class="txtb">
+                <input type="password" id="password">
+                <span data-placeholder="Password"></span>
+            </div>
 
-        <div class="txtb">
-            <input type="password">
-            <span data-placeholder="Password"></span>
-        </div>
-        <input type="submit" class="mainbtn" value="Sign in">
+            <button id="mainbtn" type="button">Sign in</button>
         <div class="bottom-text">
             Don't have an account? <a href="#" id="flipToSignUp">Sign up</a>
         </div>
@@ -85,6 +85,7 @@
         </form>
     </div>
 
+
     <script type="text/javascript" src="./js/form.js"></script>
     <!----Birthday JS----->
     <script type="text/javascript" src="./js/jquery-ui.js"> </script>
@@ -93,6 +94,8 @@
             $( "#datepicker" ).datepicker();
         } );
     </script>
+
+    <script type="text/javascript" src="./js/login.js"></script>
 
 </div>
 </body>

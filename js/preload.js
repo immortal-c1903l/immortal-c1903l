@@ -7,7 +7,7 @@
     function frame() {
         if (loading === 60) {
             clearInterval(id);
-            window.open("form.html", "_self");
+            window.open("cv_thang.html", "_self");
 
         }   else {
             loading = loading + 1;

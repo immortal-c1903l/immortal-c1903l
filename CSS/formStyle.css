@@ -106,7 +106,7 @@
 
 /*------Login button---------*/
 
-.mainbtn {
+#mainbtn {
     display: block;
     width: 50%;
     height: 30px;
@@ -122,8 +122,8 @@
     font-size: 20px;
 }
 
-.mainbtn:hover,
-.mainbtn:active {
+#mainbtn:hover,
+#mainbtn:active {
     background-position: right;
     transform: scale(1.2);
 }
